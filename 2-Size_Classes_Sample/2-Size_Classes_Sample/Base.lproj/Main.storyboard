@@ -265,23 +265,5 @@
             </objects>
             <point key="canvasLocation" x="339" y="354"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="GIS-Sg-Bhw">
-            <objects>
-                <viewController id="KsD-fl-hXO" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2aT-pk-TDt"/>
-                        <viewControllerLayoutGuide type="bottom" id="sry-Xt-dvG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3dp-ho-aKJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fa7-wK-vOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="334" y="1010"/>
-        </scene>
     </scenes>
 </document>
