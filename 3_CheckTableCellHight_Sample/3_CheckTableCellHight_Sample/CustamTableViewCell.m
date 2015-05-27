@@ -25,7 +25,7 @@
     self.titleLabel.text    =   dataSorce.title;
     self.bodyLabel.text     =   dataSorce.body;
     [self layoutIfNeeded];
-    
+    //→layoutSubviewsが呼ばれる！
 }
 -(DataSorce *)dataSorce
 {
@@ -35,6 +35,7 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
+    //ラベルの横幅をpreferredMaxLayoutWidthで設定する。(高さ計算で必要）
     self.titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.titleLabel.bounds);
     self.bodyLabel.preferredMaxLayoutWidth  = CGRectGetWidth(self.bodyLabel.bounds);
 }
@@ -52,14 +53,13 @@
         
         cell.dataSorce = dataSorce;
         
+        //Autolayoutが適用された後の高さサイズを取得する
         CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
         
         return size.height;
     }else{
         return 0;
     }
-    
-    
 }
 
 @end
