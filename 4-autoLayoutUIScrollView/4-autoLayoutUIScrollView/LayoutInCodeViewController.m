@@ -38,7 +38,7 @@
     [self.myScrollView addSubview:page1];
     [self.myScrollView addSubview:page2];
     
-    // AutoLayoutoに対応するため AutoresizingMaskをオフにする
+    //  Auto Resizing Mask をエミュレートを解除する。
     self.myScrollView.translatesAutoresizingMaskIntoConstraints = NO;
     page1.translatesAutoresizingMaskIntoConstraints = NO;
     page2.translatesAutoresizingMaskIntoConstraints = NO;
