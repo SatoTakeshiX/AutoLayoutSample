@@ -42,5 +42,11 @@
 - (IBAction)dissapearView:(UIBarButtonItem *)sender {
     self.secondLabel.text = nil;
     self.secontVertualConstraint.constant = 0.f;
+    
+    //せっかくなのでアニメーション
+    [UIView animateWithDuration:0.5f
+                     animations:^{
+                         [self.view layoutIfNeeded];
+                     }];
 }
 @end

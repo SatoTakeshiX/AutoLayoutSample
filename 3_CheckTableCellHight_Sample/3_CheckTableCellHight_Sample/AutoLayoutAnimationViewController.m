@@ -64,6 +64,8 @@
     NSString *verticalFormat        =   [NSString stringWithFormat:@"V:|-88-[%1$@]-20-[%2$@(==%1$@)]-20-|", topViewKey, leftViewKey];
     NSString *addVertivalFormat     =   [NSString stringWithFormat:@"V:|-88-[%1$@]-20-[%2$@(==%1$@)]-20-|", topViewKey, rightViewKey];
     
+    
+
     //制約を設定する
     [self.contentView addConstraints:[NSLayoutConstraint
                                      constraintsWithVisualFormat:horizontalFormat
